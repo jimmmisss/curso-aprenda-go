@@ -18,8 +18,9 @@ func helloWorld() {
 	/*fmt.Println("### HELLO WORLD ###")
 	numeroDeCatacteres, err := fmt.Println("Hello world", "Wesley", 666)
 	fmt.Println(numeroDeCatacteres, err)
-	variaveis()*/
-	tipos()
+	variaveis()
+	tipos()*/
+	exercicio01()
 }
 
 func variaveis() {
@@ -40,4 +41,14 @@ func tipos() {
 	fmt.Printf("c: %v, %T\n", c, c)
 	fmt.Printf("d: %v, %T\n", d, d)
 	fmt.Printf("e: %v, %T\n", e, e)
+}
+
+func exercicio01() {
+	x := 42
+	y := "Lemmy Kilmster"
+	z := true
+	fmt.Println(x, y, z)
+	fmt.Println(x)
+	fmt.Println(y)
+	fmt.Println(z)
 }
