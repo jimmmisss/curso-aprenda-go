@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 var y = "Olá brow"
 
@@ -12,6 +15,8 @@ var e string
 
 func main() {
 	helloWorld()
+	fmt.Println(runtime.GOOS)
+	fmt.Println(runtime.GOARCH)
 }
 
 func helloWorld() {
