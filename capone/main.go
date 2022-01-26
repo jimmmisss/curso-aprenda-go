@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 )
+
+const ui int = 1000
 
 var y = "Olá brow"
 
@@ -14,17 +15,15 @@ var d bool
 var e string
 
 func main() {
-	helloWorld()
-	fmt.Println(runtime.GOOS)
-	fmt.Println(runtime.GOARCH)
+	loopFor()
 }
 
 func helloWorld() {
-	/*fmt.Println("### HELLO WORLD ###")
+	fmt.Println("### HELLO WORLD ###")
 	numeroDeCatacteres, err := fmt.Println("Hello world", "Wesley", 666)
 	fmt.Println(numeroDeCatacteres, err)
 	variaveis()
-	tipos()*/
+	tipos()
 	exercicio01()
 }
 
@@ -56,4 +55,26 @@ func exercicio01() {
 	fmt.Println(x)
 	fmt.Println(y)
 	fmt.Println(z)
+}
+
+func decimalBinarioEHexadecimal() {
+	x := 100
+	fmt.Printf("%d, %#x, %b", x, x, x)
+}
+
+func expressoes() {
+	a := (10 == 10)
+	b := (10 != 10)
+	c := (10 <= 10)
+	d := (10 < 10)
+	e := (10 >= 10)
+	f := (10 > 10)
+
+	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f)
+}
+
+func loopFor() {
+	for x := 33; x <= 122; x++ {
+		fmt.Printf("%d - %v\n", x, string(x))
+	}
 }
